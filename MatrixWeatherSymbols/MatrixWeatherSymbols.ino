@@ -36,7 +36,10 @@ void setup()
 }
 void loop()
 {
-	Cloud1();
+	Cloud();
+	delay(1000);
+	Sun4();
+	delay(1000);
 
 	//Snygg sol
 	//Sun4();
@@ -81,7 +84,7 @@ void FourByFourSquare()
 
 }
 
-void Cloud1()
+void Cloud()
 {
 	byte b[8] = {
 		B00000000,
@@ -104,162 +107,7 @@ void Cloud1()
 	lc.setRow(0, 7, b[7]);
 }
 
-void Cloud2()
-{
-	byte b[8] = {
-		B00000000,
-		B01100000,
-		B11110110,
-		B10001011,
-		B10000001,
-		B01111110,
-		B00000000,
-		B00000000,
-
-	};
-	lc.setRow(0, 0, b[0]);
-	lc.setRow(0, 1, b[1]);
-	lc.setRow(0, 2, b[2]);
-	lc.setRow(0, 3, b[3]);
-	lc.setRow(0, 4, b[4]);
-	lc.setRow(0, 5, b[5]);
-	lc.setRow(0, 6, b[6]);
-	lc.setRow(0, 7, b[7]);
-}
-
-void Sun1()
-{
-	byte b[8] = {
-		B10010001,
-		B01010010,
-		B00011000,
-		B00111111,
-		B11111100,
-		B00011000,
-		B01001010,
-		B10001001,
-	};
-	lc.setRow(0, 0, b[0]);
-	lc.setRow(0, 1, b[1]);
-	lc.setRow(0, 2, b[2]);
-	lc.setRow(0, 3, b[3]);
-	lc.setRow(0, 4, b[4]);
-	lc.setRow(0, 5, b[5]);
-	lc.setRow(0, 6, b[6]);
-	lc.setRow(0, 7, b[7]);
-}
-
-void Sun2()
-{
-	byte b[8] = {
-		B10001000,
-		B01001001,
-		B00101010,
-		B00011100,
-		B11111111,
-		B00011100,
-		B00101010,
-		B01001001,
-	};
-	lc.setRow(0, 0, b[0]);
-	lc.setRow(0, 1, b[1]);
-	lc.setRow(0, 2, b[2]);
-	lc.setRow(0, 3, b[3]);
-	lc.setRow(0, 4, b[4]);
-	lc.setRow(0, 5, b[5]);
-	lc.setRow(0, 6, b[6]);
-	lc.setRow(0, 7, b[7]);
-}
-
-void Sun2a()
-{
-	byte b[8] = {
-		B10001000,
-		B01001001,
-		B00001000,
-		B00011100,
-		B11111111,
-		B00011100,
-		B00001000,
-		B01001001,
-	};
-	lc.setRow(0, 0, b[0]);
-	lc.setRow(0, 1, b[1]);
-	lc.setRow(0, 2, b[2]);
-	lc.setRow(0, 3, b[3]);
-	lc.setRow(0, 4, b[4]);
-	lc.setRow(0, 5, b[5]);
-	lc.setRow(0, 6, b[6]);
-	lc.setRow(0, 7, b[7]);
-}
-
-void Sun2b()
-{
-	byte b[8] = {
-		B00001000,
-		B01001000,
-		B00101010,
-		B00011100,
-		B11111111,
-		B00011100,
-		B00101010,
-		B00001000,
-	};
-	lc.setRow(0, 0, b[0]);
-	lc.setRow(0, 1, b[1]);
-	lc.setRow(0, 2, b[2]);
-	lc.setRow(0, 3, b[3]);
-	lc.setRow(0, 4, b[4]);
-	lc.setRow(0, 5, b[5]);
-	lc.setRow(0, 6, b[6]);
-	lc.setRow(0, 7, b[7]);
-}
-
-void Sun2d()
-{
-	byte b[8] = {
-		B10010001,
-		B01010010,
-		B00111100,
-		B11111111,
-		B00111000,
-		B01010100,
-		B10010010,
-		B00010001,
-	};
-	lc.setRow(0, 0, b[0]);
-	lc.setRow(0, 1, b[1]);
-	lc.setRow(0, 2, b[2]);
-	lc.setRow(0, 3, b[3]);
-	lc.setRow(0, 4, b[4]);
-	lc.setRow(0, 5, b[5]);
-	lc.setRow(0, 6, b[6]);
-	lc.setRow(0, 7, b[7]);
-}
-
-void Sun3()
-{
-	byte b[8] = {
-		B10001000,
-		B01001001,
-		B00000010,
-		B00011100,
-		B11011111,
-		B00011100,
-		B00101010,
-		B01001001,
-	};
-	lc.setRow(0, 0, b[0]);
-	lc.setRow(0, 1, b[1]);
-	lc.setRow(0, 2, b[2]);
-	lc.setRow(0, 3, b[3]);
-	lc.setRow(0, 4, b[4]);
-	lc.setRow(0, 5, b[5]);
-	lc.setRow(0, 6, b[6]);
-	lc.setRow(0, 7, b[7]);
-}
-
-void Sun4()
+void Sun()
 {
 	byte b[8] = {
 		B10010010,
